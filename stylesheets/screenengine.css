@@ -111,7 +111,7 @@ body {
 /* line 45, ../sass/screen.scss */
 .container {
   width: 100%;
-  text-align: left;
+  text-align: center;
   -ms-text-justify: distribute-all-lines;
   text-justify: distribute-all-lines;
   font-family: 'Cabin', sans-serif;
@@ -327,14 +327,15 @@ nav[role="full-horizontal"] ul > li > a {
   /*margin-top: 10em;*/
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   text-align: center;
   align-content: center;
-  padding-top: 3em;
+  padding-top: 2em;
   padding-left: 3em;
   padding-right: 3em;
-  padding-bottom: 20em;
+  padding-bottom: 7em;
   overflow: auto;
   font: 'Cabin', sans-serif;
 }
@@ -364,7 +365,7 @@ nav[role="full-horizontal"] ul > li > a {
   padding-left: 3em;
   padding-right: 3em;
   padding-bottom: 20em;
-  overflow: auto;
+  overflow: hidden;
   font: 'Cabin', sans-serif;
 }
 @media screen and (max-width: 500px) {
@@ -461,32 +462,48 @@ nav[role="full-horizontal"] ul > li > a {
   line-height: 0;
 }
 
-.image-right
-{
-	float:right;
-	width:400px;
-	height:auto;
-	margin:20px;
-	border-radius:10px;
-	box-shadow:0 0 5px 2px rgba(0,0,0,0.50);
+.image-right-container {
+  float: right;
+  width: 420px;
+  text-align: center; //box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 
-.image-left
-{
-	float:left;
-	width:350px;
-	height:auto;
-	margin:20px;
-	border-radius:10px;
-	box-shadow:0 0 5px 2px rgba(0,0,0,0.50);
+.image-left-container {
+  float: left;
+  width: 430px;
+  text-align: center; //box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 
-.image-centre
-{
-	float:centre;
-	width:400px;
-	height:auto;
-	margin:20px;
-	border-radius:10px;
-	box-shadow:0 0 5px 2px rgba(0,0,0,0.50);
+.image-right {
+	float: right;
+  width: 400px;
+  height: auto;
+  margin: 20px auto 1px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.50);
+}
+
+.image-left {
+  float: left;
+  width: 400px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.50);
+}
+
+.image-centre {
+  float: centre;
+  width: 400px;
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.50);
+}
+
+.image-text {
+  font-size: 12px;
+  width: auto;
+  margin: 0;
+  text-align: centre;
 }

@@ -96,7 +96,7 @@ body {
 
 /* line 33, ../sass/screen.scss */
 html {
-  background: url(../img/024.jpg) no-repeat center center fixed;
+  background: url(../img/037.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -331,10 +331,10 @@ nav[role="full-horizontal"] ul > li > a {
   border-top-right-radius: 1em;
   text-align: center;
   align-content: center;
-  padding-top: 3em;
+  padding-top: 2em;
   padding-left: 3em;
   padding-right: 3em;
-  padding-bottom: 20em;
+  padding-bottom: 7em;
   overflow: auto;
   font: 'Cabin', sans-serif;
 }
@@ -364,7 +364,7 @@ nav[role="full-horizontal"] ul > li > a {
   padding-left: 3em;
   padding-right: 3em;
   padding-bottom: 20em;
-  overflow: auto;
+  overflow: hidden;
   font: 'Cabin', sans-serif;
 }
 @media screen and (max-width: 500px) {
@@ -460,3 +460,68 @@ nav[role="full-horizontal"] ul > li > a {
   font-size: 0;
   line-height: 0;
 }
+
+.image-right-container {
+  float: right;
+  width: 350px;
+}
+
+.image-left-container {
+  float: left;
+  width: 390px;
+}
+
+.image-right {
+  width: 330px;
+  height: auto;
+  margin: 10px 1px 1px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.50);
+}
+
+.image-left {
+  float: left;
+  width: 370px;
+  height: auto;
+  margin: 10px 20px 1px -2px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.50);
+}
+
+.image-centre {
+  float: centre;
+  width: 400px;
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.50);
+}
+
+.image-text {
+  font-size: 12px;
+  width: auto;
+  margin: 0;
+  text-align: centre; //box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+    width: auto;
+    max-width: 1000px;
+    margin: 10px 50px;
+    text-align: center;
+}
+
+.slider-image{
+	height:400px;
+	width: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+

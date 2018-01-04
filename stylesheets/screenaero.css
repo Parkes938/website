@@ -356,10 +356,10 @@ nav[role="full-horizontal"] ul>li>a {
   border-top-right-radius: 1em;
   text-align: center;
   align-content: center;
-  padding-top: 3em;
+  padding-top: 2em;
   padding-left: 3em;
   padding-right: 3em;
-  padding-bottom: 20em;
+  padding-bottom: 3em;
   overflow: auto;
   font: 'Cabin', sans-serif;
 }
@@ -377,8 +377,8 @@ nav[role="full-horizontal"] ul>li>a {
 #footer-background {
   background: #232020;
   width: 85%;
-  height: 20em;
-  margin-bottom: 3em;
+  height: 30px;
+  margin-bottom: 2em;
   color: #f9f9f9;
   /*margin-top: 10em;*/
   margin-left: auto;
@@ -387,11 +387,11 @@ nav[role="full-horizontal"] ul>li>a {
   border-bottom-right-radius: 1em;
   text-align: center;
   align-content: center;
-  padding-top: 3em;
+  padding-top: 0.1em;
   padding-left: 3em;
   padding-right: 3em;
-  padding-bottom: 20em;
-  overflow: auto;
+  padding-bottom: 35em;
+  overflow: hidden;
   font: 'Cabin', sans-serif;
 }
 
@@ -400,7 +400,7 @@ nav[role="full-horizontal"] ul>li>a {
   #footer-background {
     padding-left: 1em;
     padding-right: 1em;
-  }
+	}
 }
 
 /* line 354, ../sass/screen.scss */
@@ -504,6 +504,12 @@ nav[role="full-horizontal"] ul>li>a {
   text-align: center; //box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 
+.image-left-container {
+  float: left;
+  width: 190px;
+  text-align: center; //box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
 .image-right {
   width: 230px;
   height: auto;
@@ -521,11 +527,11 @@ nav[role="full-horizontal"] ul>li>a {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.50);
 }
 
-.image-centre {
-  float: centre;
-  width: 400px;
+.image-center {
+  float: center;
+  width: 370px;
   height: auto;
-  margin: 20px;
+  margin: 12px;
   border-radius: 10px;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.50);
 }
@@ -536,3 +542,26 @@ nav[role="full-horizontal"] ul>li>a {
   margin: 0;
   text-align: centre;
 }
+
+.carousel-container {
+    width: auto;
+    max-width: 1000px;
+    margin: 10px 50px;
+    text-align: center;
+	height: 30px;
+}
+
+.slider-image{
+	height:400px;
+	width: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+

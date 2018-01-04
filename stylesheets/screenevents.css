@@ -96,7 +96,7 @@ body {
 
 /* line 33, ../sass/screen.scss */
 html {
-  background: url(../img/024.jpg) no-repeat center center fixed;
+  background: url(../img/churchbends16.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -334,7 +334,7 @@ nav[role="full-horizontal"] ul > li > a {
   padding-top: 3em;
   padding-left: 3em;
   padding-right: 3em;
-  padding-bottom: 20em;
+  padding-bottom: 7em;
   overflow: auto;
   font: 'Cabin', sans-serif;
 }
@@ -364,7 +364,7 @@ nav[role="full-horizontal"] ul > li > a {
   padding-left: 3em;
   padding-right: 3em;
   padding-bottom: 20em;
-  overflow: auto;
+  overflow: hidden;
   font: 'Cabin', sans-serif;
 }
 @media screen and (max-width: 500px) {
