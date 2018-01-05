@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screencontact.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,500|Cabin:400,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,500|Cabin:400,700|Roboto:300);
 /* line 5, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -336,7 +336,8 @@ nav[role="full-horizontal"] ul > li > a {
   padding-right: 3em;
   padding-bottom: 7em;
   overflow: auto;
-  font: 'Cabin', sans-serif;
+  font-family: sans-serif;
+  font: 1em 'Roboto';
 }
 @media screen and (max-width: 500px) {
   /* line 283, ../sass/screen.scss */
@@ -500,8 +501,8 @@ nav[role="full-horizontal"] ul > li > a {
 .image-text {
   font-size: 12px;
   width: auto;
-  margin: 0;
-  text-align: centre; //box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  margin: 5px 0 0;
+  text-align: center;
 }
 
 .carousel-container {
@@ -514,6 +515,11 @@ nav[role="full-horizontal"] ul > li > a {
 .slider-image{
 	height:400px;
 	width: auto;
+}
+
+.slider-item{
+margin: 5px 20px;
+
 }
 
 .dropdown-content {

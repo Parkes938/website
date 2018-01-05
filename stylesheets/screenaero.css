@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screenaero.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,500|Cabin:400,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,500|Cabin:400,700|Roboto:300);
 /* line 5, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -354,14 +354,15 @@ nav[role="full-horizontal"] ul>li>a {
   margin-right: auto;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-  text-align: center;
+  text-align: justify;
   align-content: center;
   padding-top: 2em;
   padding-left: 3em;
   padding-right: 3em;
   padding-bottom: 3em;
   overflow: auto;
-  font: 'Cabin', sans-serif;
+  font-family: sans-serif;
+  font: 1em 'Roboto';
 }
 
 @media screen and (max-width: 500px) {
@@ -390,7 +391,7 @@ nav[role="full-horizontal"] ul>li>a {
   padding-top: 0.1em;
   padding-left: 3em;
   padding-right: 3em;
-  padding-bottom: 35em;
+  padding-bottom: 20em;
   overflow: hidden;
   font: 'Cabin', sans-serif;
 }
@@ -538,9 +539,9 @@ nav[role="full-horizontal"] ul>li>a {
 
 .image-text {
   font-size: 12px;
-  width: 100%;
-  margin: 0;
-  text-align: centre;
+  width: auto;
+  margin: 5px 0 0;
+  text-align: center;
 }
 
 .carousel-container {
