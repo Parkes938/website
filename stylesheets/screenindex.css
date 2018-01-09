@@ -25,6 +25,30 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+@media only screen and (max-width: 500px) {
+/* line 5, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  }
+}
+
 /* line 22, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
@@ -125,6 +149,14 @@ body {
   position: fixed;
 }
 
+@media only screen and (max-width: 480px) {
+  /* line 62, ../sass/screen.scss */
+#header-background{  
+  width: 95%;
+  height: 8em;
+  }
+}
+
 /* line 74, ../sass/screen.scss */
 #logo {
   background: #db111d;
@@ -148,6 +180,14 @@ body {
   transition: all 0.3;
 }
 
+@media only screen and (max-width: 500px) {
+  /* line 74, ../sass/screen.scss */
+#logo{  
+  width: 4em;
+  height: 2em;
+  }
+}
+
 /* line 99, ../sass/screen.scss */
 #nav-menu {
   background: #232020;
@@ -169,24 +209,12 @@ body {
 
 @media only screen and (max-width: 500px) {
   /* line 99, ../sass/screen.scss */
-  background: #232020;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 15;
-  padding-top: 0.6em;
-  vertical-align: middle;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  flex-grow: 1;
-  -webkit-transition: all 0.3;
-  -moz-transition: all 0.3;
-  -ms-transition: all 0.3;
-  -o-transition: all 0.3;
-  transition: all 0.3;
+#nav-menu{  
+  width: 100%;
+  height: 4em;
+  padding-top: 0.5em;
   }
 }
-  
 
 /* line 122, ../sass/screen.scss */
 .topLogo {
@@ -218,6 +246,14 @@ body {
   transition: all 0.3;
 }
 
+@media only screen and (max-width: 480px) {
+  /* line 122, ../sass/screen.scss */
+.toplogo{  
+  width: 10%;
+  height: 5em;
+  }
+}
+
 /* line 154, ../sass/screen.scss */
 .topNav {
   background: #ffffff;
@@ -239,9 +275,28 @@ body {
   transition: all 0.3;
 }
 
+@media only screen and (max-width: 480px) {
+  /* line 154, ../sass/screen.scss */
+.topNav{  
+  width: auto;
+  height: 3em;
+  margin-top: 0.4em;
+  z-index: 3;
+  display: inline-block;
+  *display: inline;
+  }
+}
+
 /* line 176, ../sass/screen.scss */
 #spacer-div {
   height: 10em;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 176, ../sass/screen.scss */
+#spacer-div{  
+  height: 2em;
+  }
 }
 
 /* line 180, ../sass/screen.scss */
@@ -258,13 +313,15 @@ body {
 @media only screen and (max-width: 500px) {
   /* line 180, ../sass/screen.scss */
   #intro-background {
-	 background: rgba(35, 32, 32, 0.5);
+  background: rgba(35, 32, 32, 0.5);
   color: #E7E0EB;
   border-radius: 1em 1em 1em 1em;
-  width: 22em;
+  width: 27em;
+  margin-top: 8em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
+  margin-bottom: 6em;
+  font-size: 0.5;
 	
   }
 }
@@ -323,10 +380,17 @@ nav[role="full-horizontal"] ul > li > a {
 }
 
 /* small screens */
-@media only screen and (max-width: 44em) {
+@media only screen and (max-width: 500px) {
   /* line 247, ../sass/screen.scss */
   body {
+	background: url(../img/mainback.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     margin: 1.5em 0;
+    font: 0.4em 'Oswald', sans-serif;
+
   }
 
   /* line 252, ../sass/screen.scss */
@@ -343,18 +407,8 @@ nav[role="full-horizontal"] ul > li > a {
   nav[role="full-horizontal"] ul > li:after {
     box-shadow: none;
   }
-
-  /*Top Menus for small screens*/
-  /* line 269, ../sass/screen.scss */
-  #logo {
-    position: relative;
-  }
-
-  /* line 274, ../sass/screen.scss */
-  #nav-menu {
-    position: relative;
-  }
 }
+
 /* line 283, ../sass/screen.scss */
 #content-background {
   background: rgba(35, 32, 32, 0.5);
@@ -377,14 +431,14 @@ nav[role="full-horizontal"] ul > li > a {
 @media only screen and (max-width: 500px) {
   /* line 283, ../sass/screen.scss */
   #content-background {
-	  background: rgba(35, 32, 32, 0.5);
-	color: #E7E0EB;
-    padding-left: 1em;
+	padding-left: 1em;
     padding-right: 1em;
-	width: auto;
-	height: auto;
+	width: 90%;
+	height: 230px;
 	align-content: center;
-	
+	padding-top: 4em;
+	padding-bottom: 10em;
+	overflow: auto;
   }
 }
 
@@ -412,26 +466,11 @@ nav[role="full-horizontal"] ul > li > a {
 @media only screen and (max-width: 500px) {
   /* line 316, ../sass/screen.scss */
   #footer-background {
-	 background: #232020;
-  width: 85%;
-  height: 5em;
-  margin-bottom: 1em;
-  color: #f9f9f9;
-  /*margin-top: 3em;*/
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
-  text-align: center;
-  align-content: center;
-  padding-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 15em;
-  overflow: hidden;
-  font: 'Cabin', sans-serif;
-    padding-left: 1em;
-    padding-right: 1em;
+	 width: 90%;
+	 height: 100px;
+	 position: bottom;
+	 padding-top: 5em;
+	 overflow: hidden;
   }
 }
 
@@ -468,6 +507,7 @@ nav[role="full-horizontal"] ul > li > a {
   -ms-text-justify: distribute-all-lines;
   text-justify: distribute-all-lines;
   font-family: 'Cabin', sans-serif;
+  
 }
 
 /* line 387, ../sass/screen.scss */
@@ -488,7 +528,7 @@ nav[role="full-horizontal"] ul > li > a {
   .col1 {
     margin-left: auto;
     margin-right: auto;
-  }
+	 }
 }
 
 /* line 409, ../sass/screen.scss */
@@ -583,11 +623,10 @@ nav[role="full-horizontal"] ul > li > a {
 }
 
 @media only screen and (max-width: 500px) {
-  /* line 409, ../sass/screen.scss */
   .carousel-container {
-    width: auto;
+    width: 85%;
     max-width: 460px;
-    margin: 5px auto;
+    margin: 5px auto 5px auto;
     text-align: center;
   }
 }
@@ -598,8 +637,7 @@ nav[role="full-horizontal"] ul > li > a {
 }
 
 @media only screen and (max-width: 500px) {
-  /* line 409, ../sass/screen.scss */
-  .carousel-container {
+  .slider-image {
     height:100px;
 	width: auto;
   }
@@ -608,6 +646,12 @@ nav[role="full-horizontal"] ul > li > a {
 .slider-item{
 margin: 5px 20px;
 
+}
+
+@media only screen and (max-width: 500px) {
+  .slider-item {
+    margin: 5px 10px;
+  }
 }
 
 .dropdown-content {
