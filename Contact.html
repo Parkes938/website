@@ -14,7 +14,7 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type='text/javascript' src="scripts/script.js"></script>
+    
     <style>
       html {
         background: url("img/churchbends16.jpg") no-repeat center center fixed;
@@ -88,7 +88,8 @@
         </div>
         <div class="entry-content content">
           <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_1'>
-            <form id="contactform" method="" target="" accept-charset="utf-8">
+		  
+            <form id="contactform" action="" method="POST" target="no-target" accept-charset="utf-8">
               <div class='gform_heading'>
                 <span class='gform_description'>Please use this form if you have a Sponsorship or Media related enquiry, and we will get back to you as soon as possible.</span>
               </div>
@@ -130,9 +131,10 @@
               </ul>
 
               <button type="submit" id='form-submit'>Submit</button>
-
+			<script type='text/javascript' src="scripts/script.js"></script>
             </form>
-          </div>
+				<p id="input-feedback"></p>	
+			</div>
         </div>
       </div>
 
