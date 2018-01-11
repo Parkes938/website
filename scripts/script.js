@@ -20,5 +20,5 @@ $('#contactform').one('submit', function() {
   var submitURL = (baseURL + firstEntry + '=' + first + '&' + lastEntry + '=' + last + '&' + emailEntry + '=' + email + '&' + subjectEntry + '=' + subject + '&' + messageEntry + '=' + message + submitRef);
   console.log(submitURL);
   $(this)[0].action = submitURL;
-  $('#input-feedback').text('Thank You!');
+  $('#input-feedback').text('Thank You. Your message has been sent');
 });
