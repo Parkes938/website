@@ -15,10 +15,12 @@
 	  src="https://code.jquery.com/jquery-3.2.1.min.js"
 	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	  crossorigin="anonymous"></script>
-	  
+	<script type="text/javascript" src="scripts/bootstrap.js"></script> 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
     <script type='text/javascript' src="scripts/script.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	
 <style>
 	 html {
   background: url(img/006.jpg) no-repeat center center fixed;
@@ -31,21 +33,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
  </head>
   <body id="body">
-  <script>
-		$.get("nav.html", function (data) {
-        $("#nav-placeholder").replaceWith(data);
+ 	<script>
+      $(function () {
+        $('#nav-home').addClass("active");
       });
-	</script>
+    </script>
 
 	  <nav class="navbar navbar-inverse navbar-fixed top">
 	  <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                  </button>
         <a class="navbar-brand logo">PARKES</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true" style="">
@@ -116,33 +114,46 @@
           <h2>PVA glue, wax and then tooling gelcoat; fig 2 and 3</h2>
           Next step is a coat of PVA glue followed by a coat or 2 of wax; I’ve scraped really priceless work without the wax. Then followed by 2 coats of the bright green tooling gel coat which will form the hard smooth face of the mould surface once cured. This green tooling coat gets back with many layers of fibre glass as reinforment to it's structure.
         
-        <div id="contain">
+        <div class="contain">
 			<div class="category">
-			<img src="img/13.jpg" height="200px" width="auto">
+			<a target="_blank" href="img/13.jpg">
+			<img src="img/13.jpg" alt="parts" height="200px" width="auto"></a>
 			<div class="image-text">
 					1.Parts made from clay, resin then filler
 			</div>
 			</div>
+			</div>
+			<div class="contain">
 			<div class="category">
-			<img src="img/12.jpg" height="200px" width="auto">
+			<a target="_blank" href="img/12.jpg">
+			<img src="img/12.jpg" alt="toolingcoat" height="200px" width="auto"></a>
 			<div class="image-text">
 					2.Wax then apply green tooling gelcoat
 			</div>
 			</div>
+			</div>
+			<div class="contain">
 			<div class="category">
-			<img src="img/moulds.jpg" height="200px" width="auto">
+			<a target="_blank" href="img/moulds.jpg">
+			<img src="img/moulds.jpg" alt="moulds" height="200px" width="auto"></a>
 			<div class="image-text">
 					3.Remove cured mould from original part
 			</div>
 			</div>
+			</div>
+			<div class="contain">
 			<div class="category">
-			<img src="img/wetlay.jpg" height="200px" width="auto">
+			<a target="_blank" href="img/wetlay.jpg">
+			<img src="img/wetlay.jpg" alt="wetlay" height="200px" width="auto"></a>
 			<div class="image-text">
 					4.Lay final carbon/ fibreglass into mould
 			</div>
 			</div>
+			</div>
+			<div class="contain">
 			<div class="category">
-			<img src="img/carbonclose.jpg" class="category" height="200px" width="auto">
+			<a target="_blank" href="img/carbonclose.jpg">
+			<img src="img/carbonclose.jpg" alt="carbonclose" height="200px" width="auto"></a>
 			<div class="image-text">
 					5.Once cured; remove from mould, trim edges and polish
 				</div>
@@ -151,18 +162,20 @@
 			</div>
 			<br>
 			<div class="grid-wide-center">
-			 <div class="contain2">
-			<div class="category2">
-			<img src="img/carbonleft.jpg" height="300px" width="auto">
-			<img src="img/carbonright.jpg" height="300px" width="auto">
+			 <div class="contain">
+			<div class="category">
+			<a target="_blank" href="img/carbonleft.jpg">
+			<img src="img/carbonleft.jpg" alt="carbonleft" height="250px" width="auto">
+			<img src="img/carbonright.jpg" alt="carbonright" height="250px" width="auto"></a>
 			<div class="image-text">
 					Finished parts installed with 7075 spools for fixing points
 				</div>
 			</div>
 			</div>
 			</div>
+			<br>
 					
-		 <div class="grid-narrow-center">
+		 <div class="grid-wide-center">
           <h2>Layup of fabrics; fig 4</h2>
           For these pieces I have used 2 layers of Diolen fabric with one intermediate layer of 240g chopped strand fibreglass to help bond to the shape and one ultra thin layer of reinforced fibreglass fabric cloth at the back
           to just tidy up and conceal any loose strands to give a smoother finish. I used high temperature epoxy resin as these will hold the hot radiator. Worthy of a mention is the worlds best secret: Diolen. It looks exactly like carbon fibre cloth and to
