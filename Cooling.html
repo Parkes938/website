@@ -31,48 +31,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
   <body id="body">
+  <script>
+		$.get("nav.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+	</script>
 
-    <div id='header-background' class="container">
-      <div id="logo" class="topLogo">
-        PARKES
+	  <nav class="navbar navbar-inverse navbar-fixed top">
+	  <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo">PARKES</a>
       </div>
-      <div id='nav-menu' class="topNav">
-        <nav role="full-horizontal" align-"centre"="align-" centre""="centre" "">
-          <ul>
-            <li>
+      <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true" style="">
+        <ul class="nav navbar-nav">
+	  
+            <li id="nav-data" class="">
               <a href="./index.html">Home</a>
             </li>
-            <li>
+            <li id="nav-data" class="">
               <a href="./Introduction.html">Intro</a>
             </li>
-            <li>
-              <a href="./Chassis.html">Chassis</a>
-            </li>
-            <li>
-              <a href="./Swingarm.html">Swingarm</a>
-            </li>
-            <li>
-              <a href="./Engine.html">Engine</a>
-            </li>
-            <li>
-              <a href="./Aero.html">Aero</a>
-            </li>
-            <li>
-              <a href="./Cooling.html">Cooling</a>
-            </li>
-            <li>
-              <a href="./exhausts.html">Exhausts</a>
-            </li>
-            <li>
+			<li id="nav-support" class="dropdown">
+              <a href="./Techjournals.html" class="dropbtn">Tech Journals</a>
+            <div class="dropdown-content">
+			<a href="./Chassis.html" target="_blank">Chassis</a>
+            <a href="./Swingarm.html" target="_blank">Swingarm</a>
+            <a href="./Engine.html" target="_blank">Engine</a>
+            <a href="./Aero.html" target="_blank">Aero</a>
+            <a href="./Cooling.html" target="_blank">Cooling</a>
+            <a href="./exhausts.html" target="_blank">Exhausts</a>
+			</div>
+			</li>
+			<li id="nav-data" class="">
               <a href="./Contact.html">Contact</a>
             </li>
-            <li>
-              <a href="./Events.html">Events</a>
+            <li id="nav-data" class="">
+            <a href="./Events.html">Events</a>
             </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+			</ul>
+			</div>
+			<!--/.nav-collapse -->
+			</div>
+			</nav>
+      
+    
+
+    <div id="spacer-div"></div>
 
         <div id="spacer-div"></div>
 
@@ -130,14 +140,23 @@ The additional water, rads, pipes and ducting is costing me performance in so ma
         <h2>Foundry needed</h2>
 	  The multiple last place finishes have been down to the steering and/or spikes in poor cooling. I have built in many safe guards to protect the engine from melting. Anything over 85 degrees and the acceleration injection correction starts to drop off, mixture richens and advance drops. The ECU then monitors conditions as the temp rises further which effectively drops performance to the point where it feels like you are towing a dead horse. It does just enough to let me coast for the remaining laps and try to maintain corner speed whilst cruising down the straights just to get lap experience. There is so much to evaluate as well as ‘race’ that the amount of laps needed is high. If my calculations are right; at 14K rpm it is flowing a massive 3.3 litres of water every second! The temperature rises 5 degrees by dropping to 10K rpm; I like (or perhaps in this case I don't like) to imagine the pockets of dancing steam around the jackets at those temperatures, surface temperature of the pistons must be pushing high 300’s. Not helped by the fact that modern pistons are so wasted there is less surface to conduct the heat to the thermally inferior liners. If only I had a foundry!
         </div>
-		<div class="image-center-container2">
-		<img src="img/001.jpg" class="image-center2">
-          <div class="image-text">
-            Cut through of the air flow through the seat section passing through the curved radiator: 1 off 3
-          </div>
-		  </div>
+		<div class="grid-wide-center">
+		<div class="contain">
+			<div class="category1">
+			<img src="img/001.jpg" width="490px" height="auto">
+			<div class="image-text">
+					Cut through of the air flow through the seat section passing through the curved radiator
+			</div>
+			</div>
+			<div class="category2">
+			<img src="img/frontrads.jpg" width="300px" height="auto">
+			<div class="image-text">
+					Front radiators making the most of the avaliable high pressure airflow
+			</div>
+			</div>
 		</div>
-		</div>
+		</div>	
+</div>		
         <div id="footer-background">
           <p> <span style="font: 3.5em 'Oswald', sans-serif"> PARKES </span> <br> The Road Race Motorcycle </p>
 

@@ -32,48 +32,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
   <body id="body">
+  <script>
+		$.get("nav.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+	</script>
 
-    <div id='header-background' class="container">
-      <div id="logo" class="topLogo">
-        PARKES
+	  <nav class="navbar navbar-inverse navbar-fixed top">
+	  <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo">PARKES</a>
       </div>
-      <div id='nav-menu' class="topNav">
-        <nav role="full-horizontal" align-"centre"="align-" centre""="centre" "">
-          <ul>
-            <li>
+      <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true" style="">
+        <ul class="nav navbar-nav">
+	  
+            <li id="nav-data" class="">
               <a href="./index.html">Home</a>
             </li>
-            <li>
+            <li id="nav-data" class="">
               <a href="./Introduction.html">Intro</a>
             </li>
-            <li>
-              <a href="./Chassis.html">Chassis</a>
-            </li>
-            <li>
-              <a href="./Swingarm.html">Swingarm</a>
-            </li>
-            <li>
-              <a href="./Engine.html">Engine</a>
-            </li>
-            <li>
-              <a href="./Aero.html">Aero</a>
-            </li>
-            <li>
-              <a href="./Cooling.html">Cooling</a>
-            </li>
-            <li>
-              <a href="./exhausts.html">Exhausts</a>
-            </li>
-            <li>
+			<li id="nav-support" class="dropdown">
+              <a href="./Techjournals.html" class="dropbtn">Tech Journals</a>
+            <div class="dropdown-content">
+			<a href="./Chassis.html" target="_blank">Chassis</a>
+            <a href="./Swingarm.html" target="_blank">Swingarm</a>
+            <a href="./Engine.html" target="_blank">Engine</a>
+            <a href="./Aero.html" target="_blank">Aero</a>
+            <a href="./Cooling.html" target="_blank">Cooling</a>
+            <a href="./exhausts.html" target="_blank">Exhausts</a>
+			</div>
+			</li>
+			<li id="nav-data" class="">
               <a href="./Contact.html">Contact</a>
             </li>
-            <li>
-              <a href="./Events.html">Events</a>
+            <li id="nav-data" class="">
+            <a href="./Events.html">Events</a>
             </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+			</ul>
+			</div>
+			<!--/.nav-collapse -->
+			</div>
+			</nav>
+      
+	  <div id="spacer-div"></div>
 
         <div id="spacer-div"></div>
 

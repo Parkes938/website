@@ -566,3 +566,41 @@ nav[role="full-horizontal"] ul>li>a {
     z-index: 1;
 }
 
+.contain {
+max-width:960px;
+text-align:center;
+}
+
+.category {
+position:relative;
+display: inline-block;
+float:left;
+padding:10px;
+}
+
+.category2 {
+position:relative;
+display: inline-block;
+pading:10px;
+}
+
+.category3 {
+position:relative;
+display: inline-block;
+float:left;
+padding:10px;
+}
+
+.category4 {
+position:relative;
+display: inline-block;
+pading:10px;
+}
+
+.category5 {
+position:relative;
+display: inline-block;
+float:right;
+margin-right:50%;
+padding:10px;
+}

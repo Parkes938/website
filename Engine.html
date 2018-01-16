@@ -30,50 +30,60 @@
 }
   </style>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  </head>
+ </head>
   <body id="body">
+  <script>
+		$.get("nav.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+	</script>
 
-    <div id='header-background' class="container">
-      <div id="logo" class="topLogo">
-        PARKES
+	  <nav class="navbar navbar-inverse navbar-fixed top">
+	  <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo">PARKES</a>
       </div>
-      <div id='nav-menu' class="topNav">
-        <nav role="full-horizontal" align-"centre"="align-" centre""="centre" "">
-          <ul>
-            <li>
+      <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true" style="">
+        <ul class="nav navbar-nav">
+	  
+            <li id="nav-data" class="">
               <a href="./index.html">Home</a>
             </li>
-            <li>
+            <li id="nav-data" class="">
               <a href="./Introduction.html">Intro</a>
             </li>
-            <li>
-              <a href="./Chassis.html">Chassis</a>
-            </li>
-            <li>
-              <a href="./Swingarm.html">Swingarm</a>
-            </li>
-            <li>
-              <a href="./Engine.html">Engine</a>
-            </li>
-            <li>
-              <a href="./Aero.html">Aero</a>
-            </li>
-            <li>
-              <a href="./Cooling.html">Cooling</a>
-            </li>
-            <li>
-              <a href="./exhausts.html">Exhausts</a>
-            </li>
-            <li>
+			<li id="nav-support" class="dropdown">
+              <a href="./Techjournals.html" class="dropbtn">Tech Journals</a>
+            <div class="dropdown-content">
+			<a href="./Chassis.html" target="_blank">Chassis</a>
+            <a href="./Swingarm.html" target="_blank">Swingarm</a>
+            <a href="./Engine.html" target="_blank">Engine</a>
+            <a href="./Aero.html" target="_blank">Aero</a>
+            <a href="./Cooling.html" target="_blank">Cooling</a>
+            <a href="./exhausts.html" target="_blank">Exhausts</a>
+			</div>
+			</li>
+			<li id="nav-data" class="">
               <a href="./Contact.html">Contact</a>
             </li>
-            <li>
-              <a href="./Events.html">Events</a>
+            <li id="nav-data" class="">
+            <a href="./Events.html">Events</a>
             </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+			</ul>
+			</div>
+			<!--/.nav-collapse -->
+			</div>
+			</nav>
+      
+    
+
+    <div id="spacer-div"></div>
 
         <div id="spacer-div"></div>
 
@@ -122,8 +132,8 @@
       <div class="grid-narrow-center">
         <h2>2017</h2>
         2017 brought the big bang engine, out to 938cc now; long stroke, stronger lighter conrods, new exhausts and most importantly a different firing order. Over to Kev’s dyno in Cradley for this one as Freddy had closed up. Kev’s is a rolling road; a good one but still only a rolling road, they have limitations and harder to quickly change loads to do the mid range work but far simplier to load the bike on at least! April 2017 saw the new motor make 150hp at 13,400 rpm.
-<div class="image-left-container" width="430px">
-          <img src="img/guypaddock.jpg" class="image-left" width="400px">
+		<div class="image-left-container" width="430px">
+          <img src="img/engine3.jpg" class="image-left" width="400px">
           <div class="image-text">
             Guy and Tom discussing cam profiles
           </div>

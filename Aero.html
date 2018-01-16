@@ -29,50 +29,60 @@
 }
   </style>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  </head>
+ </head>
   <body id="body">
+  <script>
+		$.get("nav.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+	</script>
 
-    <div id='header-background' class="container">
-      <div id="logo" class="topLogo">
-        PARKES
+	  <nav class="navbar navbar-inverse navbar-fixed top">
+	  <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo">PARKES</a>
       </div>
-      <div id='nav-menu' class="topNav">
-        <nav role="full-horizontal" align-"centre"="align-" centre""="centre" "">
-          <ul>
-            <li>
+      <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true" style="">
+        <ul class="nav navbar-nav">
+	  
+            <li id="nav-data" class="">
               <a href="./index.html">Home</a>
             </li>
-            <li>
+            <li id="nav-data" class="">
               <a href="./Introduction.html">Intro</a>
             </li>
-            <li>
-              <a href="./Chassis.html">Chassis</a>
-            </li>
-            <li>
-              <a href="./Swingarm.html">Swingarm</a>
-            </li>
-            <li>
-              <a href="./Engine.html">Engine</a>
-            </li>
-            <li>
-              <a href="./Aero.html">Aero</a>
-            </li>
-            <li>
-              <a href="./Cooling.html">Cooling</a>
-            </li>
-            <li>
-              <a href="./exhausts.html">Exhausts</a>
-            </li>
-            <li>
+			<li id="nav-support" class="dropdown">
+              <a href="./Techjournals.html" class="dropbtn">Tech Journals</a>
+            <div class="dropdown-content">
+			<a href="./Chassis.html" target="_blank">Chassis</a>
+            <a href="./Swingarm.html" target="_blank">Swingarm</a>
+            <a href="./Engine.html" target="_blank">Engine</a>
+            <a href="./Aero.html" target="_blank">Aero</a>
+            <a href="./Cooling.html" target="_blank">Cooling</a>
+            <a href="./exhausts.html" target="_blank">Exhausts</a>
+			</div>
+			</li>
+			<li id="nav-data" class="">
               <a href="./Contact.html">Contact</a>
             </li>
-            <li>
-              <a href="./Events.html">Events</a>
+            <li id="nav-data" class="">
+            <a href="./Events.html">Events</a>
             </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+			</ul>
+			</div>
+			<!--/.nav-collapse -->
+			</div>
+			</nav>
+      
+    
+
+    <div id="spacer-div"></div>
 
     <div id="spacer-div"></div>
 
@@ -83,88 +93,101 @@
 	<br>
 <br>
     <div id="content-background">
-      <div id="title1">Considering the flow</div>
+      <div id="title1">The Donkey</div>
 	  
 			<div class="main-container">
 		<div class="grid-span">
      		 		 <h2>The history behind it</h2>
 					 It was early 2015, Oulton Park had a race weekend on. I put in a late entry to just race on the Saturday. Having never riden the chassis before, this was it's debut to see what it could do. My dad was stood on the pitwall monitoring laptimes when he overheard a fellow spectator say 'what's that; looks like a horse', someone responded; 'no, more like a donkey'. My dad couldn't stop laughing. Problem was, he was right. The name has stuck ever since. What it did promote is the rapid redesign of the fairings. They were ugly and boxy, I needed to put a few months aside to do the job properly this time; build the whole bike as one with clay and plastercene rather than individual components. 
-          Making moulds are probably the one area which have cost the most time so far. I’m on the 3rd set now and fortunately I’m nearly there. There will always be changes to make but generally I am pleased with the aero and the look. Building up each
-          component is a bit of a solace for me, I’m busy thinking of holidays and ice cream while I’m applying plastercene and cardboard to build them up to the shape I want. Every so often there’s a need to put on some resin or filler to give the backing
+          Making moulds are probably the one area which have cost the most time so far. I’m on the 3rd set now and fortunately I’m nearly there. There will always be changes to make but generally I am pleased with the aero and the look. Interestingly the input of labour Vs performance output with all things composites is not a figure I would like to work out. I just aknowledge it is a must and get on with it. Building up each
+          component is a solace for me, I’m busy thinking of moutains and ice cream while I’m applying plastercene and cardboard to build them up to the shape I want. Every so often there’s a need to put on some resin or filler to give the backing
           some strength so that’s what drags a project out over many weeks.
         </div>
 		<div class="grid-left-two">
-          <h2>Here's a few I made earlier</h2>
+          <h2>Here's a few I made earlier; fig 1</h2>
           This is probably as tricky as I want to go with wet lay moulds as there is multiple opposing compound angles at work which means that releasing the final piece from the mould will rely on a slightly sympathetic layup of layers of fabric to ensure
           there is enough flex in the structure to manipulate around the mould without breaking.
-        </div>
-        <div class="grid-right-three">
-          <h2>Start from scratch</h2>
+        <br>
           These 3 are made in my traditional method of using scrap card to get the basic shape; backed with fibreglass resin. Then on with the plastercene to blend the hard edges and then when within 5mm of the final shape I go on with the filler. From here on
           in there’s about 30 hours on each mould to produce a part. Lots of sanding of the filler then when your happy or you adopt the Chinese methodology of ‘that’ll do’, then your onto spraying a high build primer to seal and provide a harder surface.
           Guess what’s next; more sanding with fine grit down to a baby bum finish. If you notice small blemishes fill with fine filler otherwise take up yoga and build it up again until you’re happy.
         </div>
         <div class="grid-wide-center">
-          <h2>PVA release mix</h2>
-          Next step is a coat of PVA glue followed by a coat or 2 of wax (I’ve scraped really priceless work without the wax; maybe my PVA just doesn’t cut it?)
-        </div>
+          <h2>PVA glue, wax and then tooling gelcoat; fig 2 and 3</h2>
+          Next step is a coat of PVA glue followed by a coat or 2 of wax; I’ve scraped really priceless work without the wax. Then followed by 2 coats of the bright green tooling gel coat which will form the hard smooth face of the mould surface once cured. This green tooling coat gets back with many layers of fibre glass as reinforment to it's structure.
         
-		<div class="images">
-			<div>
-				<img class="imagebox" src="img/13.jpg">
-				<div class="image-text">
-					Parts made from clay, resin then filler
+        <div id="contain">
+			<div class="category">
+			<img src="img/13.jpg" height="200px" width="auto">
+			<div class="image-text">
+					1.Parts made from clay, resin then filler
+			</div>
+			</div>
+			<div class="category">
+			<img src="img/12.jpg" height="200px" width="auto">
+			<div class="image-text">
+					2.Wax then apply green tooling gelcoat
+			</div>
+			</div>
+			<div class="category">
+			<img src="img/wetlay.jpg" height="200px" width="auto">
+			<div class="image-text">
+					3.Remove cured mould from original part
+			</div>
+			</div>
+			<div class="category">
+			<img src="img/wetlay.jpg" height="200px" width="auto">
+			<div class="image-text">
+					4.Lay final carbon/ fibreglass into mould
+			</div>
+			</div>
+			<div class="category">
+			<img src="img/carbonclose.jpg" class="category" height="200px" width="auto">
+			<div class="image-text">
+					5.Once cured; remove from mould, trim edges and polish
 				</div>
 			</div>
-			<div>
-				<img class="imagebox" src="img/12.jpg">
-				<div class="image-text">
-					Wax then apply green tooling gelcoat
+			</div>
+			</div>
+			<br>
+			<div class="grid-wide-center">
+			 <div class="contain2">
+			<div class="category2">
+			<img src="img/carbonleft.jpg" height="300px" width="auto">
+			<img src="img/carbonright.jpg" height="300px" width="auto">
+			<div class="image-text">
+					Finished parts installed with 7075 spools for fixing points
 				</div>
 			</div>
-			<div>
-				<img class="imagebox" src="img/wetlay.jpg">
-				<div class="image-text">
-					Remove mould from original part
-				</div>
 			</div>
-			<div>
-				<img class="imagebox" src="img/wetlay.jpg">
-				<div class="image-text">
-					Lay final carbon/ fibreglass into mould
-				</div>
 			</div>
-			<div>
-				<img class="imagebox" src="img/wetlay.jpg">
-				<div class="image-text">
-					Pop out once cured and polish
-				</div>
-			</div>
-          </div>
-		  <div class="grid-narrow-center">
-          <h2>Green slime tooling coat applied</h2>
-          Then comes the critical stage; applying the green tooling coat and backing fibreglass to make the mould itself. Leave it to set for a few days and it should pop off; ready to wax and lay in your final produce. These were all carbon with clear epoxy.
-          Pop out, trim and then polish. For these pieces I have used 2 layers of Diolen fabric with one intermediate layer of 240g chopped strand fibreglass to help bond to the shape and one ultra thin layer of reinforced fibreglass fabric cloth at the back
+					
+		 <div class="grid-narrow-center">
+          <h2>Layup of fabrics; fig 4</h2>
+          For these pieces I have used 2 layers of Diolen fabric with one intermediate layer of 240g chopped strand fibreglass to help bond to the shape and one ultra thin layer of reinforced fibreglass fabric cloth at the back
           to just tidy up and conceal any loose strands to give a smoother finish. I used high temperature epoxy resin as these will hold the hot radiator. Worthy of a mention is the worlds best secret: Diolen. It looks exactly like carbon fibre cloth and to
           most it will perform the same. From what I have seen most of the cosmetic products out there in the market such as mudguards and general trim are made with Diolen using polyester resin purely for cost; it is in the region of 5 times cheaper to
           manufacture products this way. Carbon made with epoxy is truly top spec for structural applications with demanding requirements. Diolen with epoxy is great unless you are making a chassis component out of it and then planning on crashing it into the
           Armco! It’s the epoxy and the process (removing air) that gives a laminate it’s strength, the fabric is not always the focus.
         </div>
         <div class="grid-wide-center">
-          <h2>The verdict</h2>
+          <h2>Pop out the final part; fig 5</h2>
+		  After a few days of curing the part will be ready to release. Trim the edges with various cutters and grinders then flatten the surface with wet and dry and polish to show the fibre layup underneath.
+		  </div>
+        <div class="grid-right-three">
+          <h2>Starting from scratch</h2>
           I’ve gone to town with considering air flow in every area. It's something that just requires time and motivation. Thinking about pressures, volume, effect on drag whilst trying to balance each commodity to achieve an overall balance. Most of which
           has worked out ok (in the end); airflow for cooling is spot on but unfortunately at the demise of the high pressure feed to the airbox. Ideal high pressure volume is down by about 30% so I’m missing out on the optimum ram air effect. My dad always
-          reminds me that’s not a problem; as it doesn’t go fast enough anyway! Positive ram air effect in the region of 1bar is typically generated at >150mph. Here’s a picture of all the cooling works, tunnels and scoops to keep the donkey from melting it’s
-          pistons again.
+          reminds me that’s not a problem; as it doesn’t go fast enough anyway! Positive ram air effect in the region of 1bar is typically generated at >150mph.
         </div>
         <div class="grid-wide-center">
           <h2>Other features</h2>
 		  <div class="image-right-container">
-		<img src="img/009.jpg" class="image-right" width="280px"">
+		<img src="img/009.jpg" class="image-right" width="280px">
           <div class="image-text">
             Venting unwanted pressure
-          </div>
-		  </div>
+			</div>
+           </div>
           Little fins on the tank were added to expel the excess volume that gets pulled into the low pressure area behind the front fairing and finds itself pushing against the underside of the tank cover. Something I discovered in 2016 when at top speed;
 		  the tank cover popped up and tapped me on the chin. Concequently the pressures are now well directed and the cover well secured. The frontal area is not great due to all this ducting work; however it does shield the rider; me, far better than any other bike out there. I can only
           assume that the likes of Honda have analysed the trade off between rider extremities creating drag and wake Vs the additional frontal area to the overall drag coefficient and deemed that 'narrow as possible' is best? My thinking is potentially lagging
@@ -176,8 +199,11 @@
           <div class="image-text">
             Just a few of the many moulds hanging from the walls
           </div>
-		 </div>
+		  </div>
+		 
        </div>
+	   </div>
+	   </div>
        <div id="footer-background">
           <p> <span style="font: 3.5em 'Oswald', sans-serif"> PARKES </span> <br> The Road Race Motorcycle </p>
       </div>
