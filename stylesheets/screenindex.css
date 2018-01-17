@@ -1331,6 +1331,10 @@ border-radius: 1px; }}
 	width: 5%
 	} 
 	}
+	
+	.navbar-header {
+	 height: 10px;
+ }
 
 /* line 50, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-collapse {

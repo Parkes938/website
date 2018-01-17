@@ -977,10 +977,15 @@ li.dropdown {
   @media (min-width: 992px) {
     /* line 10, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss */
     .container {
-      width: 970px; } }
+      width: 95%;
+height: 10px;	  } }
   @media only screen and (max-width: 500px) {
 	  .container {
 	  width: 375px;}
+ }
+ 
+ .navbar-header {
+	 height: 10px;
  }
 	  	  
 /* line 232, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -1607,7 +1612,7 @@ border-radius: 1px; }}
   display: table; }
 /* line 19, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 .navbar-header:after {
-  clear: both; }
+  clear: both;  }
 @media (max-width: 820px) {
   /* line 31, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-header {
