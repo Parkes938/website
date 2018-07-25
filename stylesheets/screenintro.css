@@ -623,7 +623,7 @@ nav[role="full-horizontal"] ul > li > a {
 .image-text-banner {
 	display: block;
   font-size: 12px;
-  width: 100%;
+  width: auto;
   margin: 5px 0 3px 0;
   vertical-align: bottom;
   text-align: center;
