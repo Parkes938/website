@@ -284,7 +284,7 @@ nav[role="full-horizontal"] ul > li > a {
 #footer-background {
   background: #232020;
   width: 85%;
-  height: 5em;
+  height: 15em;
   margin-bottom: 3em;
   color: #f9f9f9;
   /*margin-top: 10em;*/
@@ -297,7 +297,7 @@ nav[role="full-horizontal"] ul > li > a {
   padding-top: 3em;
   padding-left: 3em;
   padding-right: 3em;
-  padding-bottom: 35em;
+  padding-bottom: 3em;
   overflow: hidden;
   font: 'Cabin', sans-serif;
 }
