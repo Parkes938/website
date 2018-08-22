@@ -483,7 +483,7 @@ nav[role="full-horizontal"] ul>li>a {
 @media only screen and (max-width: 500px) {
   #footer-background {
     width: 90%;
-    height: 50px;
+    height: 100px;
     position: bottom;
     padding-top: 5em;
     overflow: hidden;
@@ -615,12 +615,6 @@ nav[role="full-horizontal"] ul>li>a {
 
 /* line 99, ../sass/screen.scss */
 
-.navbar {
-  align-items: center;
-}
-
-/* line 102, ../sass/screen.scss */
-
 .navbar ul {
   padding-left: 5em;
   list-style: none;
@@ -628,15 +622,6 @@ nav[role="full-horizontal"] ul>li>a {
   list-style-type: none;
   color: transparent;
 }
-
-/* line 99, ../sass/screen.scss */
-
-.navbar {
-  align-items: center;
-}
-
-/* line 102, ../sass/screen.scss */
-
 .navbar ul>li {
   font-size: 15px;
   position: relative;
@@ -649,9 +634,6 @@ nav[role="full-horizontal"] ul>li>a {
   transition-timing-function: ease-in-out;
   transition-property: background, color, padding, border-radius;
 }
-
-/* line 122, ../sass/screen.scss */
-
 .navbar ul>li:after {
   position: absolute;
   z-index: -1;
@@ -659,27 +641,17 @@ nav[role="full-horizontal"] ul>li>a {
   right: 0;
   border-radius: 50%;
 }
-
-/* line 130, ../sass/screen.scss */
-
 .navbar ul>li:last-child:after {
   box-shadow: none;
 }
-
-/* line 134, ../sass/screen.scss */
-
 .navbar ul>li:hover {
   background-color: #E71B64;
 }
-
-/* line 138, ../sass/screen.scss */
-
 .navbar ul>li>a {
   color: #E7E0EB;
   text-decoration: none;
   font-size: 1.4em;
 }
-
 @media only screen and (max-width: 500px) {
   .navbar ul>li>a {
     color: #E7E0EB;
@@ -687,20 +659,25 @@ nav[role="full-horizontal"] ul>li>a {
     font-size: 0.9em;
   }
 }
-
-/* line 11, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar {
   position: relative;
   min-height: 70px;
   max-height: 100px;
   margin_left: 10px;
+  margin_top: 2px;
   margin-bottom: 20px;
   border: 1px solid transparent;
+  align-items: center;
 }
-
-/* line 14, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-
+@media only screen and (max-width: 500px) {
+.navbar {
+  position: relative;
+  min-height: 30px;
+  max-height: 500px;
+  margin_left: 5px;
+  margin-bottom: 5px;
+  }
+}
 .navbar:before,
 .navbar:after {
   content: " ";
@@ -714,7 +691,6 @@ nav[role="full-horizontal"] ul>li>a {
 }
 
 @media (min-width: 820px) {
-  /* line 11, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar {
     border-radius: 4px;
   }
@@ -728,9 +704,6 @@ nav[role="full-horizontal"] ul>li>a {
     margin-bottom: 10px;
   }
 }
-
-/* small screens */
-
 @media screen and (max-width: 44em) {
   /* line 148, ../sass/screen.scss */
   body {
@@ -786,7 +759,7 @@ li.dropdown {
 @media (min-width: 500px) {
 .dropdown-content {
   max-width: 95%;
-  z-index: 0.5;
+  z-index: 0.1;
   }
 }
 .dropdown-content a {
@@ -1238,7 +1211,12 @@ li.dropdown {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-
+@media (max-width: 500px) {
+.navbar-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+}
 @media (min-width: 820px) {
   /* line 359, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-text {
@@ -1899,53 +1877,41 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 /* line 50, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-collapse {
-  overflow-x: visible;
+  display: flex;
   padding-right: 15px;
   padding-left: 15px;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
 }
-
-/* line 14, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-
-.navbar-collapse:before,
+.vbar-collapse:before,
 .navbar-collapse:after {
   content: " ";
   display: table;
 }
-
-/* line 19, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-
 .navbar-collapse:after {
   clear: both;
 }
-
-/* line 59, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-collapse.in {
   overflow-y: auto;
 }
 
-@media (min-width: 820px) {
-  /* line 50, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-collapse {
-    width: auto;
+@media (max-width: 500px) {
+ .navbar-collapse {
+    width: 100%;
     border-top: 0;
     box-shadow: none;
   }
-  /* line 68, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-collapse.collapse {
+}
+.navbar-collapse.collapse {
     display: block !important;
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
   }
-  /* line 75, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-collapse.in {
     overflow-y: visible;
   }
-  /* line 81, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-fixed-top .navbar-collapse,
   .navbar-static-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
@@ -2003,11 +1969,26 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+@media (max-width: 500px) {
+.cube {
+  width: 100px;
+  height: 35px;
+  }
+}
+
 /* The two faces of the cube */
 .default-state,
 .active-state {
   height: 100px;
 }
+@media (max-width: 500px) {
+.default-state,
+.active-state {
+  height: 35px;
+  line-height: 350px;
+  }
+}
+
 /* Position the faces */
 .default-state {
   -webkit-transform: translateZ(50px);
@@ -2045,9 +2026,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   -o-transform: rotateX(89deg);
   transform: rotateX(89deg);
 }
-/* END CORE CSS */
-/* Demo styling */
-
 h1 {
   font-size: 20px;
   text-align: center;
@@ -2076,7 +2054,7 @@ h1 {
   .default-state,
   .active-state {
     font-size: 8px;
-    line-height: 15px;
+    line-height: 35px;
   }
 }
 
@@ -2097,7 +2075,8 @@ h1 {
 }
 @media (max-width: 500px) {
 #flipto {
-  margin-top: 5px;
+  margin-top: 12px;
+  text-align: center;
   }
 }
 
