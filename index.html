@@ -8,6 +8,7 @@
 
   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script>
   <script src="https://use.fontawesome.com/10386a299c.js"></script>
+ 
   <link rel="shortcut icon" href="img/favicon.jpg" type="image/vnd.microsoft.icon">
   <link rel="stylesheet" href="stylesheets/screenindex.css" type="text/css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -105,13 +106,30 @@
         <h2>Raced at the toughest race track in the world</h2>
         <h2>Where better to develop a prototype chassis with a unique suspension design than in the isle of man</h2>
         <p style="margin-top:1em">
-          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"></script>
-          <a> href="./Introduction.html">
-            <div class="share-button">
-               Read The Reports
-            </div>
-            </a>
+         <script>
+          $('#flipto').on("click", function(event) {
+  event.preventDefault();
+  
+  var face = $(this).data("face");
+  
+  if ( face == "bottom" ) {
+    $(".cube").removeClass("flip-to-top").addClass("flip-to-bottom");
+    $(this).data("face", "top").text("Flip: to top");
+  } else {
+    $(".cube").removeClass("flip-to-bottom").addClass("flip-to-top");
+    $(this).data("face", "bottom").text("Flip: to bottom");
+  }
+});
+          </script>
+          <div class="cube flip-to-top">
+      <div class="default-state">
+            <span>Read the reports</span>
+      </div>
+      <div class="active-state">
+        <a href="./Introduction.html">Introduction</a>
+    </div>
+</div>
+
         </p>
         
       </div>

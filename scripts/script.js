@@ -22,3 +22,5 @@ $('#contactform').one('submit', function() {
   $(this)[0].action = submitURL;
   $('#input-feedback').text('Thank You. Your message has been sent');
 });
+
+

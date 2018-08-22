@@ -469,7 +469,7 @@ nav[role="full-horizontal"] ul>li>a {
   }
 }
 
-#footer-background2 {
+#footer-background {
   background: #232020;
   width: 85%;
   height: 15em;
@@ -490,7 +490,7 @@ nav[role="full-horizontal"] ul>li>a {
 }
 
 @media only screen and (max-width: 500px) {
-  #footer-background2 {
+  #footer-background {
     width: 90%;
     height: 50px;
     position: bottom;
@@ -503,8 +503,14 @@ nav[role="full-horizontal"] ul>li>a {
 
 #title1 {
   text-align: center;
-  font: 3.5em 'Oswald', sans-serif;
+  font: 2.5em 'Oswald', sans-serif;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 500px) {
+  #title1 {
+    font: 1.5em 'Oswald', sans-serif;
+  }
 }
 
 /* line 360, ../sass/screen.scss */
@@ -1993,99 +1999,99 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   }
 }
 
-.share-button {
-  text-transform: uppercase;
-  border: 2px solid #fff;
-  display: inline-block;
-  position: absolute;
-  overflow: hidden;
-  width: 178px;
-  height: 40px;
-  top: 50%;
-  left: 50%;
-  text-transform: uppercase;
-  font-size: 14px;
-  transform: translate(-50%, -50%);
+.cube {
+  width: 250px;
+  height: 100px;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
+/* The two faces of the cube */
+.default-state,
+.active-state {
+  height: 100px;
+}
+/* Position the faces */
+.default-state {
+  -webkit-transform: translateZ(50px);
+  -moz-transform: translateZ(50px);
+  -ms-transform: translateZ(50px);
+  -o-transform: translateZ(50px);
+  transform: translateZ(50px);
+}
+.flip-to-top .active-state {
+  -webkit-transform: rotateX(90deg) translateZ(150px);
+  -moz-transform: rotateX(90deg) translateZ(150px);
+  -ms-transform: rotateX(90deg) translateZ(150px);
+  -o-transform: rotateX(90deg) translateZ(150px);
+  transform: rotateX(90deg) translateZ(150px);
+}
+.flip-to-bottom .active-state {
+  -webkit-transform: rotateX(-90deg) translateZ(-50px);
+  -moz-transform: rotateX(-90deg) translateZ(-50px);
+  -ms-transform: rotateX(-90deg) translateZ(-50px);
+  -o-transform: rotateX(-90deg) translateZ(-50px);
+  transform: rotateX(-90deg) translateZ(-50px);
+}
+/* Rotate the cube */
+.cube.flip-to-top:hover {
+  -webkit-transform: rotateX(-89deg);
+  -moz-transform: rotateX(-89deg);
+  -ms-transform: rotateX(-89deg);
+  -o-transform: rotateX(-89deg);
+  transform: rotateX(-89deg);
+}
+.cube.flip-to-bottom:hover {
+  -webkit-transform: rotateX(89deg);
+  -moz-transform: rotateX(89deg);
+  -ms-transform: rotateX(89deg);
+  -o-transform: rotateX(89deg);
+  transform: rotateX(89deg);
+}
+/* END CORE CSS */
+/* Demo styling */
 
-.share-button a {
-  color: white;
-  font-size: 12px;
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+.cube {
+  text-align: center;
+  margin: 0 auto;
+}
+.default-state,
+.active-state {
+  background: rgba(182, 222, 234, 0.5);
+  background: rgba(86, 178, 191, 0.5);
+  filter: alpha(opacity=50);
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 100px;
+  -webkit-transition: background 250ms ease;
+  -moz-transition: background 250ms ease;
+  -o-transition: background 250ms ease;
+  transition: background 250ms ease;
+}
+.cube:hover .default-state {
+  background: rgb(84, 167, 183, 0.5);
+  filter: alpha(opacity=50);
+}
+.active-state {
+  background: rgb(86, 178, 191, 0.5);
+  filter: alpha(opacity=50);
+}
+#flipto {
   display: block;
+  text-align: center;
   text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 1px;
-  line-height: 26px;
-  padding: 7px 13px 7px 13px;
-}
-
-.share-button>a:after {
-  font-family: FontAwesome;
-  font-size: 14px;
-  color: white;
-  content: "\f064";
-  margin-left: 10px;
-}
-
-.share-button>a:hover,
-.share-button>a:hover:after,
-.share-button .icon-wrapper ul li a:hover i {
-  color: #e4e9ea;
-}
-
-.share-button .icon-wrapper ul li:last-child a:hover i {
-  color: red;
-}
-
-.share-button .icon-wrapper {
-  position: absolute;
-  left: -286px;
-  top: 0;
-  width: 286px;
-}
-
-.share-button .icon-wrapper>a {
-  display: inline-block;
-}
-
-.share-button a.hidden {
-  display: none;
-}
-
-.share-button.active .icon-wrapper {
-  max-height: 40px;
-}
-
-.share-button .icon-wrapper ul {
-  padding-left: 0;
-  margin: 0;
-  height: 40px;
-}
-
-.share-button .icon-wrapper ul:after {
-  clear: both;
-}
-
-.share-button .icon-wrapper ul li {
-  float: left;
-  display: inline-block;
-}
-
-.share-button .icon-wrapper ul li:last-child {
-  float: right;
-}
-
-.share-button .icon-wrapper ul li a i {
-  color: white;
-  font-size: 14px;
-}
-
-.share-button .icon-wrapper ul li:last-child a {
-  background-color: white;
-}
-
-.share-button .icon-wrapper ul li:last-child a i {
-  color: #2d3847;
-  position: relative;
-  left: 1px;
+  margin-top: 20px;
+  color: #ccc;
 }
