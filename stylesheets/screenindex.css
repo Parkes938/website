@@ -347,9 +347,6 @@ nav[role="full-horizontal"] {
   width: 100%;
   align-items: center;
 }
-
-/* line 196, ../sass/screen.scss */
-
 nav[role="full-horizontal"] ul {
   width: 100%;
   padding-left: 2em;
@@ -358,9 +355,6 @@ nav[role="full-horizontal"] ul {
   list-style-type: none;
   color: transparent;
 }
-
-/* line 204, ../sass/screen.scss */
-
 nav[role="full-horizontal"] ul>li {
   position: relative;
   float: left;
@@ -375,9 +369,6 @@ nav[role="full-horizontal"] ul>li {
   transition-timing-function: ease-in-out;
   transition-property: background, color, padding, border-radius;
 }
-
-/* line 220, ../sass/screen.scss */
-
 nav[role="full-horizontal"] ul>li:after {
   position: absolute;
   z-index: -1;
@@ -792,9 +783,12 @@ li.dropdown {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
-/* line 195, ../sass/screen.scss */
-
+@media (min-width: 500px) {
+.dropdown-content {
+  max-width: 95%;
+  z-index: 0.5;
+  }
+}
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -802,9 +796,6 @@ li.dropdown {
   display: block;
   text-align: left;
 }
-
-/* line 203, ../sass/screen.scss */
-
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
@@ -2080,6 +2071,15 @@ h1 {
   -o-transition: background 250ms ease;
   transition: background 250ms ease;
 }
+
+@media (max-width: 500px) {
+  .default-state,
+  .active-state {
+    font-size: 8px;
+    line-height: 15px;
+  }
+}
+
 .cube:hover .default-state {
   background: rgb(84, 167, 183, 0.5);
   filter: alpha(opacity=50);
@@ -2095,3 +2095,9 @@ h1 {
   margin-top: 20px;
   color: #ccc;
 }
+@media (max-width: 500px) {
+#flipto {
+  margin-top: 5px;
+  }
+}
+
