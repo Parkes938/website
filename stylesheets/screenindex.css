@@ -188,27 +188,19 @@ video {
   }
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-
 html {
   line-height: 1;
 }
-
-/* line 24, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 
 ol,
 ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-/* line 28, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 
 caption,
 th,
@@ -218,14 +210,10 @@ td {
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-
 q,
 blockquote {
   quotes: none;
 }
-
-/* line 103, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 
 q:before,
 q:after,
@@ -235,13 +223,9 @@ blockquote:after {
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-
 a img {
   border: none;
 }
-
-/* line 116, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 
 article,
 aside,
@@ -259,13 +243,9 @@ summary {
   display: block;
 }
 
-/* line 11, ../sass/screen.scss */
-
 * {
   box-sizing: border-box;
 }
-
-/* line 15, ../sass/screen.scss */
 
 h2 {
   font-family: 'Cabin:700', sans-serif;
@@ -285,40 +265,14 @@ body {
   text-align: center;
 }
 
-html {
-  background: url(../img/mainback.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 body {
   font: 1em 'Oswald', sans-serif;
 }
 
-#header-background {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  position: fixed;
-}
-
-@media only screen and (max-width: 480px) {
-  /* line 62, ../sass/screen.scss */
-  #header-background {
-    width: 95%;
-    height: 8em;
-  }
-}
-
-/* line 176, ../sass/screen.scss */
 
 #spacer-div {
   height: 10em;
 }
-
-/* line 180, ../sass/screen.scss */
 
 #intro-background {
   background: rgba(35, 32, 32, 0.5);
@@ -329,8 +283,6 @@ body {
   margin-right: auto;
   margin-bottom: 4em;
 }
-
-/* line 191, ../sass/screen.scss */
 
 nav[role="full-horizontal"] {
   display: inline-block;
@@ -370,27 +322,19 @@ nav[role="full-horizontal"] ul>li:after {
   border-radius: 50%;
 }
 
-/* line 228, ../sass/screen.scss */
-
 nav[role="full-horizontal"] ul>li:last-child:after {
   box-shadow: none;
 }
 
-/* line 232, ../sass/screen.scss */
-
 nav[role="full-horizontal"] ul>li:hover {
   background-color: #E71B64;
 }
-
-/* line 236, ../sass/screen.scss */
 
 nav[role="full-horizontal"] ul>li>a {
   color: #E7E0EB;
   text-decoration: none;
   font-size: 0.8em;
 }
-
-/* small screens */
 
 @media only screen and (max-width: 500px) {
   /* line 247, ../sass/screen.scss */
@@ -419,8 +363,6 @@ nav[role="full-horizontal"] ul>li>a {
   }
 }
 
-/* line 283, ../sass/screen.scss */
-
 #content-background {
   background: rgba(35, 32, 32, 0.5);
   color: #E7E0EB;
@@ -440,7 +382,7 @@ nav[role="full-horizontal"] ul>li>a {
   font: 'Cabin', sans-serif;
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   #content-background {
     padding-left: 1em;
     padding-right: 1em;
@@ -473,7 +415,7 @@ nav[role="full-horizontal"] ul>li>a {
   font: 'Cabin', sans-serif;
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   #footer-background {
     width: 90%;
     height: 100px;
@@ -607,7 +549,9 @@ nav[role="full-horizontal"] ul>li>a {
   border-radius: 4px;
 }
 
-/* line 99, ../sass/screen.scss */
+.navbar {
+  align-items: center;
+}
 
 .navbar ul {
   padding-left: 5em;
@@ -649,7 +593,7 @@ nav[role="full-horizontal"] ul>li>a {
 .navbar ul>li>a {
   color: #E7E0EB;
   text-decoration: none;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 @media only screen and (max-width: 500px) {
@@ -665,11 +609,10 @@ nav[role="full-horizontal"] ul>li>a {
   min-height: 70px;
   max-height: 100px;
   margin_left: 10px;
-  margin_top: 2px;
   margin-bottom: 20px;
   border: 1px solid transparent;
-  align-items: center;
 }
+
 
 @media only screen and (max-width: 500px) {
   .navbar {
@@ -686,8 +629,6 @@ nav[role="full-horizontal"] ul>li>a {
   content: " ";
   display: table;
 }
-
-/* line 19, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 
 .navbar:after {
   clear: both;
@@ -750,8 +691,6 @@ li.dropdown {
   display: inline-block;
 }
 
-/* line 186, ../sass/screen.scss */
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -759,13 +698,6 @@ li.dropdown {
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
-}
-
-@media (min-width: 500px) {
-  .dropdown-content {
-    max-width: 95%;
-    z-index: 0.1;
-  }
 }
 
 .dropdown-content a {
@@ -780,21 +712,15 @@ li.dropdown {
   background-color: #f1f1f1;
 }
 
-/* line 207, ../sass/screen.scss */
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-/* line 11, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss */
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-/* line 14, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss */
 
 *:before,
 *:after {
@@ -803,8 +729,6 @@ li.dropdown {
   box-sizing: border-box;
 }
 
-/* line 10, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss */
-
 .container {
   margin-right: auto;
   margin-left: 1px;
@@ -812,15 +736,11 @@ li.dropdown {
   padding-right: 15px;
 }
 
-/* line 14, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-
 .container:before,
 .container:after {
   content: " ";
   display: table;
 }
-
-/* line 19, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 
 .container:after {
   clear: both;
@@ -904,11 +824,10 @@ li.dropdown {
   }
 }
 
-/* line 77, ../sass/screen.scss */
-
 .logo {
   background: #db111d;
   width: 4.5em;
+  height: 7px;
   text-align: right;
   padding-right: 0.2em;
   top: 0px;
@@ -929,8 +848,6 @@ li.dropdown {
   text-rendering: optimizelegibility;
 }
 
-/* line 128, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-static-top {
   z-index: 1000;
   border-width: 0 0 1px;
@@ -942,8 +859,6 @@ li.dropdown {
     border-radius: 0;
   }
 }
-
-/* line 138, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-fixed-top,
 .navbar-fixed-bottom {
@@ -1698,8 +1613,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-color: white white #ddd;
 }
 
-/* line 96, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
-
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:focus {
@@ -1710,25 +1623,17 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   cursor: default;
 }
 
-/* line 118, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
-
 .nav-pills>li {
   float: left;
 }
-
-/* line 122, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
 
 .nav-pills>li>a {
   border-radius: 4px;
 }
 
-/* line 125, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
-
 .nav-pills>li+li {
   margin-left: 2px;
 }
-
-/* line 131, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
 
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:hover,
@@ -1737,42 +1642,30 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-color: #E71B64;
 }
 
-/* line 144, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
-
 .nav-stacked>li {
   float: none;
 }
-
-/* line 146, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
 
 .nav-stacked>li+li {
   margin-top: 2px;
   margin-left: 0;
 }
 
-/* line 160, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
-
 .nav-justified,
 .nav-tabs.nav-justified {
   width: 100%;
 }
-
-/* line 163, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
 
 .nav-justified>li,
 .nav-tabs.nav-justified>li {
   float: none;
 }
 
-/* line 165, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
-
 .nav-justified>li>a,
 .nav-tabs.nav-justified>li>a {
   text-align: center;
   margin-bottom: 5px;
 }
-
-/* line 171, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
 
 .nav-justified>.dropdown .dropdown-menu {
   top: auto;
@@ -1793,22 +1686,16 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   }
 }
 
-/* line 190, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
-
 .nav-tabs-justified,
 .nav-tabs.nav-justified {
   border-bottom: 0;
 }
-
-/* line 193, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
 
 .nav-tabs-justified>li>a,
 .nav-tabs.nav-justified>li>a {
   margin-right: 0;
   border-radius: 4px;
 }
-
-/* line 199, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
 
 .nav-tabs-justified>.active>a,
 .nav-tabs.nav-justified>.active>a,
@@ -1837,19 +1724,13 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   }
 }
 
-/* line 224, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
-
 .tab-content>.tab-pane {
   display: none;
 }
 
-/* line 227, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
-
 .tab-content>.active {
   display: block;
 }
-
-/* line 237, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
 
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -1857,7 +1738,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-top-left-radius: 0;
 }
 
-/* line 14, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.navbar-header {
+  height: 10px;
+}
 
 .navbar-header:before,
 .navbar-header:after {
@@ -1865,28 +1748,19 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   display: table;
 }
 
-/* line 19, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-
 .navbar-header:after {
   clear: both;
 }
 
 @media (max-width: 820px) {
-  /* line 31, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-header {
     float: left;
     width: 5%
   }
 }
 
-.navbar-header {
-  height: 10px;
-}
-
-/* line 50, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-collapse {
-  display: flex;
+  overflow-x: visible;
   padding-right: 15px;
   padding-left: 15px;
   border-top: 1px solid transparent;
@@ -1894,7 +1768,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   -webkit-overflow-scrolling: touch;
 }
 
-.vbar-collapse:before,
+.navbar-collapse:before,
 .navbar-collapse:after {
   content: " ";
   display: table;
@@ -1908,6 +1782,30 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   overflow-y: auto;
 }
 
+@media (min-width: 820px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+  }
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+
+  .navbar-collapse.in {
+    overflow-y: visible;
+  }
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-static-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media (max-width: 500px) {
   .navbar-collapse {
     width: 100%;
@@ -1915,28 +1813,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     box-shadow: none;
   }
 }
-
-.navbar-collapse.collapse {
-  display: block !important;
-  height: auto !important;
-  padding-bottom: 0;
-  overflow: visible !important;
-}
-
-.navbar-collapse.in {
-  overflow-y: visible;
-}
-
-.navbar-fixed-top .navbar-collapse,
-.navbar-static-top .navbar-collapse,
-.navbar-fixed-bottom .navbar-collapse {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-}
-
-/* line 92, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-fixed-top .navbar-collapse,
 .navbar-fixed-bottom .navbar-collapse {
@@ -1950,8 +1826,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     max-height: 100px;
   }
 }
-
-/* line 108, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .container>.navbar-header,
 .container>.navbar-collapse,
