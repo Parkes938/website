@@ -576,7 +576,7 @@ nav[role="full-horizontal"] ul>li>a {
 
 .image-left-container {
   float: left;
-}
+  }
 
 @media screen and (max-width: 500px) {
   .image-left-container {
@@ -893,6 +893,7 @@ nav[role="full-horizontal"] ul>li>a {
 
 .banner2 {
   vertical-align: top;
+  margin-top: 1em;
   text-align: center;
   width: 17.5vw;
 }
