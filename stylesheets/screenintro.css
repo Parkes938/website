@@ -95,27 +95,19 @@ video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-
 html {
   line-height: 1;
 }
-
-/* line 24, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 
 ol,
 ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-/* line 28, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 
 caption,
 th,
@@ -125,14 +117,10 @@ td {
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-
 q,
 blockquote {
   quotes: none;
 }
-
-/* line 103, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 
 q:before,
 q:after,
@@ -142,13 +130,9 @@ blockquote:after {
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-
 a img {
   border: none;
 }
-
-/* line 116, ../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 
 article,
 aside,
@@ -165,8 +149,6 @@ section,
 summary {
   display: block;
 }
-
-/* line 11, ../sass/screen.scss */
 
 * {
   box-sizing: border-box;
@@ -3723,8 +3705,6 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
   border-radius: 4px;
 }
 
-/* line 99, ../sass/screen.scss */
-
 .navbar {
   align-items: center;
 }
@@ -3765,8 +3745,6 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 .navbar ul>li:hover {
   background-color: #E71B64;
 }
-
-/* line 138, ../sass/screen.scss */
 
 .navbar ul>li>a {
   color: #E7E0EB;
@@ -3817,33 +3795,24 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
   }
 }
 
-/* small screens */
-
 @media screen and (max-width: 44em) {
-  /* line 148, ../sass/screen.scss */
   body {
     margin: 1.5em 0;
   }
-  /* line 153, ../sass/screen.scss */
   nav[role="full-horizontal"] ul {
     padding: 0 0.5em;
   }
-  /* line 157, ../sass/screen.scss */
   nav[role="full-horizontal"] ul>li {
     width: 100%;
     padding: 0.45em 0.25em;
     margin: 0 0 0.55em;
   }
-  /* line 162, ../sass/screen.scss */
   nav[role="full-horizontal"] ul>li:after {
     box-shadow: none;
   }
-  /*Top Menus for small screens*/
-  /* line 168, ../sass/screen.scss */
   #logo {
     position: relative;
   }
-  /* line 172, ../sass/screen.scss */
   #nav-menu {
     position: relative;
   }
@@ -3937,13 +3906,9 @@ li.dropdown {
   height: 10px;
 }
 
-/* line 232, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-nav {
   margin: 12.5px -15px;
 }
-
-/* line 235, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-nav>li>a {
   padding-top: 10px;
@@ -3952,7 +3917,6 @@ li.dropdown {
 }
 
 @media (max-width: 819px) {
-  /* line 243, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -3962,16 +3926,13 @@ li.dropdown {
     border: 0;
     box-shadow: none;
   }
-  /* line 251, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu>li>a,
   .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
-  /* line 255, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu>li>a {
     line-height: 20px;
   }
-  /* line 257, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu>li>a:hover,
   .navbar-nav .open .dropdown-menu>li>a:focus {
     background-image: none;
@@ -3979,23 +3940,18 @@ li.dropdown {
 }
 
 @media (min-width: 820px) {
-  /* line 232, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav {
     float: left;
     margin: 0;
   }
-  /* line 270, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav>li {
     float: left;
   }
-  /* line 272, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav>li>a {
     padding-top: 25px;
     padding-bottom: 25px;
   }
 }
-
-/* line 77, ../sass/screen.scss */
 
 .logo {
   background: #db111d;
@@ -4020,21 +3976,16 @@ li.dropdown {
   text-rendering: optimizelegibility;
 }
 
-/* line 128, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-static-top {
   z-index: 1000;
   border-width: 0 0 1px;
 }
 
 @media (min-width: 820px) {
-  /* line 128, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-static-top {
     border-radius: 0;
   }
 }
-
-/* line 138, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-fixed-top,
 .navbar-fixed-bottom {
@@ -4045,29 +3996,22 @@ li.dropdown {
 }
 
 @media (min-width: 820px) {
-  /* line 138, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
   }
 }
 
-/* line 150, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-fixed-top {
   top: 0;
   border-width: 0 0 1px;
 }
-
-/* line 154, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-fixed-bottom {
   bottom: 0;
   margin-bottom: 0;
   border-width: 1px 0 0;
 }
-
-/* line 163, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-brand {
   float: left;
@@ -4078,21 +4022,16 @@ li.dropdown {
   height: 70px;
 }
 
-/* line 170, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
 }
-
-/* line 175, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-brand>img {
   display: block;
 }
 
 @media (min-width: 820px) {
-  /* line 180, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar>.container .navbar-brand,
   .navbar>.container-fluid .navbar-brand {
     margin-left: -15px;
@@ -4109,8 +4048,6 @@ li.dropdown {
   }
 }
 
-/* line 193, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-toggle {
   position: relative;
   float: right;
@@ -4124,13 +4061,9 @@ li.dropdown {
   border-radius: 4px;
 }
 
-/* line 206, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-toggle:focus {
   outline: 0;
 }
-
-/* line 211, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-toggle .icon-bar {
   display: block;
@@ -4139,14 +4072,11 @@ li.dropdown {
   border-radius: 1px;
 }
 
-/* line 217, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-toggle .icon-bar+.icon-bar {
   margin-top: 4px;
 }
 
 @media (min-width: 820px) {
-  /* line 193, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-toggle {
     display: none;
   }
@@ -4161,8 +4091,6 @@ li.dropdown {
   }
 }
 
-/* line 286, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-form {
   margin-left: -15px;
   margin-right: -15px;
@@ -4176,43 +4104,35 @@ li.dropdown {
 }
 
 @media (min-width: 820px) {
-  /* line 478, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
   .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 485, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
   .navbar-form .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
-  /* line 492, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
   .navbar-form .form-control-static {
     display: inline-block;
   }
-  /* line 496, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
   .navbar-form .input-group {
     display: inline-table;
     vertical-align: middle;
   }
-  /* line 500, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
   .navbar-form .input-group .input-group-addon,
   .navbar-form .input-group .input-group-btn,
   .navbar-form .input-group .form-control {
     width: auto;
   }
-  /* line 508, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
   .navbar-form .input-group>.form-control {
     width: 100%;
   }
-  /* line 512, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
   .navbar-form .control-label {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 519, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
   .navbar-form .radio,
   .navbar-form .checkbox {
     display: inline-block;
@@ -4220,12 +4140,10 @@ li.dropdown {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 526, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
   .navbar-form .radio label,
   .navbar-form .checkbox label {
     padding-left: 0;
   }
-  /* line 530, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
   .navbar-form .radio input[type="radio"],
   .navbar-form .checkbox input[type="checkbox"] {
     position: relative;
@@ -4303,15 +4221,12 @@ li.dropdown {
   margin-bottom: 24px;
 }
 
-/* line 359, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-text {
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
 @media (min-width: 820px) {
-  /* line 359, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-text {
     float: left;
     margin-left: 15px;
@@ -4320,35 +4235,26 @@ li.dropdown {
 }
 
 @media (min-width: 820px) {
-  /* line 379, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-left {
     float: left !important;
   }
-  /* line 382, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-right {
     float: right !important;
     margin-right: -15px;
   }
-  /* line 386, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-right~.navbar-right {
     margin-right: 0;
   }
 }
-
-/* line 397, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-default {
   background-color: #232020;
   border-color: #121010;
 }
 
-/* line 401, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-default .navbar-brand {
   color: #E71B64;
 }
-
-/* line 403, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -4356,27 +4262,19 @@ li.dropdown {
   background-color: transparent;
 }
 
-/* line 410, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-default .navbar-text {
   color: #f9f9f9;
 }
 
-/* line 415, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-default .navbar-nav>li>a {
   color: #777;
 }
-
-/* line 418, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
   color: #333;
   background-color: transparent;
 }
-
-/* line 425, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
@@ -4385,8 +4283,6 @@ li.dropdown {
   background-color: #121010;
 }
 
-/* line 433, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-default .navbar-nav>.disabled>a,
 .navbar-default .navbar-nav>.disabled>a:hover,
 .navbar-default .navbar-nav>.disabled>a:focus {
@@ -4394,33 +4290,23 @@ li.dropdown {
   background-color: transparent;
 }
 
-/* line 442, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-default .navbar-toggle {
   border-color: #ddd;
 }
-
-/* line 444, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #ddd;
 }
 
-/* line 448, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #888;
 }
-
-/* line 453, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #121010;
 }
-
-/* line 462, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
@@ -4430,24 +4316,20 @@ li.dropdown {
 }
 
 @media (max-width: 819px) {
-  /* line 473, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
     color: #777;
   }
-  /* line 475, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
     color: #333;
     background-color: transparent;
   }
-  /* line 482, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
   .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
     color: #555;
     background-color: #121010;
   }
-  /* line 490, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a,
   .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:focus {
@@ -4456,19 +4338,13 @@ li.dropdown {
   }
 }
 
-/* line 506, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-default .navbar-link {
   color: #777;
 }
 
-/* line 508, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-default .navbar-link:hover {
   color: #333;
 }
-
-/* line 513, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-default .btn-link {
   color: #777;
@@ -4481,8 +4357,6 @@ li.dropdown {
   color: #333;
 }
 
-/* line 521, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-default .btn-link[disabled]:hover,
 .navbar-default .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-default .btn-link:hover,
@@ -4490,20 +4364,14 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 
-/* line 531, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-inverse {
   background-color: #232020;
   border-color: #080808;
 }
 
-/* line 535, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-inverse .navbar-brand {
   color: #fff;
 }
-
-/* line 537, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -4511,19 +4379,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: #cb1557;
 }
 
-/* line 544, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-inverse .navbar-text {
   color: #c2bcbc;
 }
 
-/* line 549, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-inverse .navbar-nav>li>a {
   color: #f9f9f9;
 }
-
-/* line 552, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-inverse .navbar-nav>li>a:hover,
 .navbar-inverse .navbar-nav>li>a:focus {
@@ -4644,8 +4506,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #fff;
 }
 
-/* line 656, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-
 .navbar-inverse .btn-link[disabled]:hover,
 .navbar-inverse .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-inverse .btn-link:hover,
@@ -4653,15 +4513,11 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
 }
 
-/* line 9, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
-
 .nav {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
-
-/* line 14, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 
 .nav:before,
 .nav:after {
@@ -4669,13 +4525,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   display: table;
 }
 
-/* line 19, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-
 .nav:after {
   clear: both;
 }
-
-/* line 15, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
 
 .nav>li {
   position: relative;
@@ -4781,8 +4633,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .nav-tabs>li>a:hover {
   border-color: white white #ddd;
 }
-
-/* line 96, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
 
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:hover,
@@ -4940,7 +4790,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 @media (max-width: 820px) {
-  /* line 31, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-header {
     float: left;
     width: 5%
@@ -4971,24 +4820,20 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 @media (min-width: 820px) {
-  /* line 50, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-collapse {
     width: auto;
     border-top: 0;
     box-shadow: none;
   }
-  /* line 68, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-collapse.collapse {
     display: block !important;
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
   }
-  /* line 75, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-collapse.in {
     overflow-y: visible;
   }
-  /* line 81, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-fixed-top .navbar-collapse,
   .navbar-static-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
@@ -4996,8 +4841,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     padding-right: 0;
   }
 }
-
-/* line 92, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 
 .navbar-fixed-top .navbar-collapse,
 .navbar-fixed-bottom .navbar-collapse {
