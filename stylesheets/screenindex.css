@@ -727,7 +727,8 @@ li.dropdown {
 @media (min-width: 992px) {
   /* line 10, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss */
   .container {
-    width: 970px;
+    width: 95%;
+    height: 10px;
   }
 }
 
@@ -1646,7 +1647,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     padding-bottom: 0;
     overflow: visible !important;
   }
-
   .navbar-collapse.in {
     overflow-y: visible;
   }
