@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PARKES - The Road Race motorcycle</title>
+        <meta charset="UTF-8">
+        <title>PARKES</title>
+
+      <link rel="shortcut icon" href="img/favicon.jpg" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="stylesheets/screenintro.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+    
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112635987-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112635987-1');
+</script>
+
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	  
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type='text/javascript' src="scripts/script.js"></script>
+<style>
+	 html {
+  background: url(img/024.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+  </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  </head>
+  <body id="body">
+  <script>
+		$.get("nav.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+	</script>
+
+	  <nav class="navbar navbar-inverse navbar-fixed top">
+	  <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo">PARKES</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true" style="">
+        <ul class="nav navbar-nav">
+	  
+            <li id="nav-data" class="">
+              <a href="./index.html">Home</a>
+            </li>
+            <li id="nav-data" class="">
+              <a href="./Introduction.html">Intro</a>
+            </li>
+			<li id="nav-support" class="dropdown">
+              <a href="./Techjournals.html" class="dropbtn">Tech Journals</a>
+            <div class="dropdown-content">
+			<a href="./Chassis.html">Chassis</a>
+            <a href="./Swingarm.html">Swingarm</a>
+            <a href="./Engine.html">Engine</a>
+            <a href="./Aero.html">Aero</a>
+            <a href="./Cooling.html">Cooling</a>
+            <a href="./exhausts.html">Exhausts</a>
+            <a href="./Electrics.html">Electrics</a>
+			</div>
+			</li>
+			<li id="nav-data" class="">
+              <a href="./Contact.html">Contact</a>
+            </li>
+            <li id="nav-data" class="">
+            <a href="./Events.html">Events</a>
+            </li>
+          <li id="nav-data" class="">
+            <a href="./Gallery.html">Gallery</a>
+            </li>
+			<li id="nav-data" class="">
+            <a href="./Sales.html">Sale and service</a>
+			</li>
+           	</ul>
+			</div>
+			<!--/.nav-collapse -->
+			</div>
+			</nav>
+       
+
+        <div id="spacer-div"></div>
+		<div id="spacer-div"></div>
+
+        <div id="intro-background">
+        <div id="title1-light">Electrickery</div>
+        <div class="narrow-content" style="color:#ffffff">The story behind the development</div>
+      </div>
+<br>
+<br>
+        <div id="content-background">
+            <div id="title1">Coding and programming</div>
+
+            <div class="main-container">
+			<div class="grid-span">
+			
+			
+			
+	  		<div class="image-left-container" width="360px">
+			<div class="banner4">
+			<a target="_blank" href="img/3d_fuelmap.jpg">
+          <img src="img/3d_fuelmap.jpg" class="category-banner" alt="exhaust can"></a>
+          <span class="image-text-banner">A 3D representation of injector opening over RPM</span>
+            </div>
+			</div>
+        
+		<h2 align="left">OLED display and data logger</h2>
+        If you manage to find a talented dyno tuner; consider adoption! Gold dust doesn't come close to describing the rarity
+        of a truly skilled dyno operator and tuner. It seems with the evolution of technology on todays motorbikes the skills necessary to identify and mitigate
+        spurious readings and failures has all but faded away in place of user friendly, simplified ECU's.<br>
+        I had the challenge of writing the sequencing of crank, cams, injectors and ignition from scratch. 
+        Calculating the trigger points and degrees from edges of lobes was a big headache; I learned by adjusting and listening (and smelling)
+        what was happening.
+        Through the years I have been involved in engine tuning I have seen a few good dyno tuners retire due to a shortfall in demand. The few remaining that I used
+        weren't able to help. I really needed to have full use of the dyno so that I could monitor all the sensor readouts as I worked my way through the RPM and load ranges.
+        I lost a freshly built engine to one dyno operator who held the motor on a wide open throttle against a fully braked roller.<br>
+        From that moment I had to find a more accesible alternative. My solution was a micro data station and logger which would give me everthing on one readout.
+        Live Lambda, pressures, temperatures, rpm all on a bright OLED screen; that way I can see exactly what's happening and make changes accordingly.
+        Programming the chips was alien to me and I had massive help from a friend who
+      <div class="image-right-container" width="360px">
+	  <div class="banner3">
+          <a target="_blank" href="img/Ecu&display.jpg">
+		  <img src="img/Ecu&display.jpg" class="category-banner" alt="Ecu and display with logger"></a>
+          <span class="image-text-banner">Ecu and display with logger</span>
+		  </div>
+	  	  </div>
+	  </div>
+      <div class="grid-left-two">
+        <h2 align="left">Fine tuning</h2>
+        There are lots of small gains within a fully programmable ECU which with time can transform a engine to become smooth and refined. Take the secondary injectors for example;
+        I actually looked to using an additional set of injectors back in the airbox out of necessity rather than absolute performance. The large primary
+        injectors were approaching 10ms openings towards the top rpm. At those figures I was risking burning out the injectors as the solenoids inside them
+        are effectively being held open too long. Switching to proportionally split the fuel between banks of injectors at high rpm allowed the solenoids to get an easier life and
+        generate better atomisation of the fuel.<br>
+        The position at which the injector is fired is less critical but definately necessary; you need to have an appreciation of the dwell, air flow velocity and fuel atomisation in
+        order to govern how far in advance of top dead centre the fuel must be dispensed so that it neither hits the back of valve, or at worst; fall out of suspension onto the port walls.
+       </div>
+      <div class="grid-right-three">
+        <h2 align="left"> Charging</h2>
+		<div class="image-right-container" width="290px">
+		<div class="banner4">
+		<a target="_blank" href="img/3 phase alternator.jpg">
+		<img src="img/3 phase alternator.jpg" class="category-banner" alt="exhaust pipes"></a>
+          <span class="image-text-banner">3 phase generator and billet engine cover</span>
+		  </div>
+		  </div>
+        I made a simple 3 phase generator to make use of the quieter nights in front of the TV, relentlessly wrapping coil after coil. The output is fairly modest
+        due to the low surface area of magnets on the inner rotor. My next move is to look at creating an overun to the flywheel to maintain inertia on decelleration and therefore
+        keep the charge up for free. There will of course be losses to friction of the sprag clutch.
+	  </div>
+	  <div class="grid-wide-center">
+	  <h2>Next steps</h2>
+I have been quitely plotting an interesting project into deformable body working. I won't give too much away yet, but it will be an aerodynamic feature actuated relative
+      to the air speed/ pressure at the front of bike.
+              </div>
+	  
+	  </div>
+	  </div>
+             
+        <div id="footer-background">
+          <p> <span style="font: 3.5em 'Oswald', sans-serif"> PARKES </span> <br> The Road Race Motorcycle </p>
+
+        </div>
+
+    </body>
+</html>
